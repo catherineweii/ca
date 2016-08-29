@@ -104,7 +104,7 @@
 </article>
 
 <script type="text/javascript">
-    var todayText = getTodayText(-8)
+    var todayText = getTodayText(-7)
     document.getElementById("NavTitle").innerHTML = isNaN(todayText[1]) ? "" : "Clock - THE " + todayText[1] +"TH DAY - Catherine ♥︎ Ant"
     document.getElementById("TodayDate").innerHTML = todayText[0];
     setTime()
@@ -148,7 +148,7 @@
         return [currentDate.toDateString(),days];
     }
     function setTime() {
-        document.getElementById("Los Ageles, US").innerHTML = getLocalTime(-8);
+        document.getElementById("Los Ageles, US").innerHTML = getLocalTime(-7);
         document.getElementById("London, UK").innerHTML = getLocalTime(0);
         document.getElementById("Beijing, CN").innerHTML = getLocalTime(8);
     }
