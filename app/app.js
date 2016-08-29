@@ -32,6 +32,6 @@ CAApp.config(function($routeProvider) {
 			controller: 'TimetableCtrl'
 		}).
 		otherwise({
-			redirectTo: '/homework'
+			redirectTo: '/clock'
 		});
 });
