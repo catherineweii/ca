@@ -43,7 +43,7 @@ CAControllers.controller('TimetableCtrl', ['$scope',
         } else if (!(new Date(utcTime + 3600000 * -7)).addDays(2).is().weekday()) {
             $scope.nextHoliday = "2 days😃"
         } else {
-            var dayDif = Math.ceil(((new Date(utcTime + 3600000 * -7)).next().saturday().getTime() - (new Date(utcTime + 3600000 * -7)).getTime()) /  1000  /  60  /  60  / 24)
+            var dayDif = Math.ceil(((new Date(utcTime + 3600000 * -7)).next().saturday().getTime() - (new Date(utcTime + 3600000 * -7)).getTime()) /  1000  /  60  /  60  / 24) - 1
             $scope.nextHoliday = dayDif + " days😃"
         }
     }
