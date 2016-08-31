@@ -241,6 +241,7 @@ CAControllers.controller('HomeworkNewCtrl', ['$scope', '$wilddogArray', "$window
         $scope.addHomework = function() {
             $scope.homeworks.$add({
                 subject: $scope.subject,
+                type: $scope.type,
                 deadline:$scope.deadline,
                 content: $scope.content,
                 done:"NO",
