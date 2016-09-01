@@ -106,7 +106,7 @@ CAControllers.controller('HomeworkCtrl', ['$scope', '$wilddogArray', "$window",
             content.html("<strong>Subject:</strong>&nbsp;&nbsp;&nbsp;&nbsp;"+homework.subject+"<br><strong>Content:</strong>&nbsp;&nbsp;&nbsp;&nbsp;"+homework.content+"<br><strong>Deadline:</strong>&nbsp;&nbsp;&nbsp;&nbsp;"+homework.deadline);
             modal.attr("class", "modal is-active");
 
-            editBtn.attr("href", "#homework-edit/id="+homework.$id)
+            editBtn.attr("href", "#assignments-edit/id="+homework.$id)
         }
 
         $scope.hideModal = function () {
