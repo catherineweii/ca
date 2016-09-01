@@ -11,7 +11,7 @@
   <div class="level-item has-text-centered">
     <p class="heading">Done</p>
     <p class="title">{{ doneList.length }}</p>
-    <p class="title" style="font-size: 12px;">🌺x<strong ng-bind="flowerCount"></strong> </p>
+    <p class="title" style="font-size: 12px;">🌸x<strong ng-bind="flowerCount"></strong> </p>
   </div>
   <div class="level-item has-text-centered">
     <p class="heading">Late Work</p>
@@ -62,7 +62,7 @@
 <div id="done" style="display: none;">
 <article id="done" class="message is-success" ng-repeat="homework in done | orderBy:'timestamp'">
   <div class="message-header">
-    {{ homework.subject }}&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px;">🌺奖励{{ homework.type == 'Test' ? ' 10 朵' : (homework.type == 'Quiz' ? ' 3 朵' : '') }}花花！</span>
+    {{ homework.subject }}&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px;">🌸奖励{{ homework.type == 'Test' ? ' 10 朵' : (homework.type == 'Quiz' ? ' 3 朵' : '') }}花花！</span>
   </div>
   <div class="message-body">
   {{ homework.content }}
@@ -83,7 +83,7 @@
 </article>
 <div id="no-late-work-notif" class="notification is-success" style="display: none;">
   <p><span style="font-size: 20px;">0</span> Late Work!!!</p>
-  <p>奖励 10 朵花花🌺🌺🌺~</p>
+  <p>奖励 10 朵花花🌸🌸🌸</p>
 </div>
 </div>
 
